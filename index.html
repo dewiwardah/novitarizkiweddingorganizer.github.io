@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta charset="width=device-width,user-scaleble=no, initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0" name="viewport">
+	<meta charset="ie=edge" http-equiv="X-UA-Compatible">
+	<title>Novita Rizki Wedding Organizer</title>
+	<link href="styles.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="grid-wrapper">
+	<aside class="sidebar">
+		<span>2</span>
+		<span></span>
+		<span>1</span>
+	</aside>
+	<header class="master-header">
+		<div class="container">
+			<nav class="main-nav">
+				<a href="./index.html" class="logo">
+					<img src="./images/logo.png" alt="">
+				</a>
+
+				<ul class="nav-list">
+					<li class="nav-item">
+						<a href="#about" class="nav-link">Tentang Kami</a>
+					</li>
+					<li class="nav-item">
+						<a href="#paket-pernikahan" class="nav-link">Paket Pernikahan</a>
+					</li>
+					<li class="nav-item">
+						<a href="#hubungi-kami" class="nav-link">Hubungi Kami</a>
+					</li>
+					<li class="nav-item">
+						<a href="#temukan-kami" class="nav-link">Temukan Kami</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<main class="main-content">
+		<div class="container">
+			<div class="description">
+				<h1 class="item-title">Novita Rizki Wedding Organizer</h1>
+				<p class="item-description">
+					Melayani Make-Up Engagement, Prewedding, Wedding <br>
+                    & Make-Up Wisuda. <br>
+					Foto, Shotting, Sewa Perlengkapan Pesta dll.
+				</p>
+				<ul class="btn1">
+					<li class="btn2 active"></li>
+					<li class="btn2"></li>
+                </ul>
+			</div>
+			<div class="image-wrapper">
+				<img src="./images/home1.jpg" alt="" class="home1" id="banner">
+				<img src="./images/rose.png" alt="" class="rose">
+			</div>
+		</div>
+		<script>
+			let btn2 = document.getElementsByClassName("btn2");
+			let banner = document.getElementById("banner");
+
+			btn2[0].onclick = function () {
+				banner.src ="./images/home1.jpg";
+				animation();
+				this.classList.add("active");
+			}
+			btn2[1].onclick = function () {
+				banner.src ="./images/home2.jpg";
+				animation();
+				this.classList.add("active");
+			}
+
+			function animation(){
+				banner.classList.add("fade-in-left");
+				setTimeout(function (){
+					banner.classList.remove("fade-in-left");
+				},500)
+
+				let b;
+				for(b of btn2){
+					b.classList.remove("active");
+				}
+			}
+		</script>
+	</main>
+</div>
+
+<!--About us-->
+<section class="about" id="about">
+	<div class="about1">
+		<div class="about2">
+			<h2 class="titleAbout"><span>T</span>entang <span>K</span>ami</h2>
+			<br><br>
+			<p class="about-p">Novita Rizki rias pengantin berdiri sejak tahun 1995,
+				ketika itu pemilik sanggar rias bernama ibu hj.Yuzwati adalah seorang ibu rumah tangga,
+				beliau berfikir untuk masa depan keluarga yg lebih baik.
+				ingin menjalankan usaha/bisnis yg bisa menambah penghasilan,
+				saat itu dalam benak beliau tersirat bahwa di Desa Sendangrejo Kec Dander Kab Bojonegoro
+				masih minim perias, tumbuhlah keinginan beliau utk bekerja sebagai seorang perias.
+				Beliau kursus rias pengantin kala itu.
+				<br><br>Dan kemudian menjalankan bisnis weddingnya ini sendirian,
+				sanggar rias ini pada saat itu melayani rias pengantin saja,
+				seiring berjalannya waktu mulailah berkembang dengan terjun ke dunia dekorasi ,
+				dan banyak mempunyai relasi kerja/vendor rekanan.
+				sampai saat ini sanggar rias ini masih tetap berjalan dan masih bnyak pelanggan yg menggunakan jasa sanggar wedding ini.</p>
+		</div>
+		<div class="about2">
+			<div class="imgTk">
+				<img src="./images/about1.JPG" alt="">
+			</div>
+		</div>
+	</div>
+
+</section>
+
+<!--paket pernikahan-->
+<section class="paket-pernikahan" id="paket-pernikahan">
+	<div class="paper1">
+		<h2 class="titleAbout"><span>P</span>aket <span>P</span>ernikahan</h2>
+		</div>
+	<div class="conten1">
+		<div class="kotak1">
+			<div class="img-paper">
+				<img src="./images/paper1.jpg" alt="">
+			</div>
+			<div class="text-paper">
+				<h3 class="text-paper">Adat Jawa</h3>
+			</div>
+		</div>
+		<div class="kotak1">
+			<div class="img-paper">
+				<img src="./images/paper2.jpg" alt="">
+			</div>
+			<div class="text-paper">
+				<h3>Sunda muslim</h3>
+			</div>
+		</div>
+        <div class="kotak1">
+            <div class="img-paper">
+                <img src="./images/paper3.jpg" alt="">
+            </div>
+            <div class="text-paper">
+                <h3 class="text-paper">Muslim Modern</h3>
+            </div>
+        </div>
+        <div class="kotak1">
+            <div class="img-paper">
+                <img src="./images/paper4.jpg" alt="">
+            </div>
+            <div class="text-paper">
+                <h3 class="text-paper">Adat Jawa</h3>
+            </div>
+        </div>
+        <div class="kotak1">
+            <div class="img-paper">
+                <img src="./images/paper5.jpg" alt="">
+            </div>
+            <div class="text-paper">
+                <h3 class="text-paper">Sunda siger</h3>
+            </div>
+        </div>
+        <div class="kotak1">
+            <div class="img-paper">
+                <img src="./images/paper6.jpg" alt="">
+            </div>
+            <div class="text-paper">
+                <h3 class="text-paper">Muslim</h3>
+            </div>
+        </div>
+	</div>
+</section>
+
+<!--hubungi kkami-->
+<section class="hubungi-kami" id="hubungi-kami">
+	<div class="kontak1">
+		<div class="form">
+			<div class="maps">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.1138202019106!2d111.84501431477457!3d-7.227856694782234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e777f606141ee29%3A0x10f5fe6dd0fb0e63!2sNovita%20Rizki%20Rias%20Pengantin!5e0!3m2!1sid!2sid!4v1627823552490!5m2!1sid!2sid" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+			</div>
+		<div class="kontak-info">
+			<h3 class="title-kontak">Hubungi Kami</h3>
+			<div class="info">
+				<div class="information">
+					<img src="./images/maps.png" class="icon-info" alt="" >
+					<p>Kluwih, Sendangrejo, Kec. Dander, Kabupaten Bojonegoro, Jawa Timur 62171</p>
+				</div>
+				<div class="information">
+					<img src="./images/tlpn.png" class="icon-info" alt="" >
+					<p>0822-3437-3150</p>
+				</div>
+				<div class="information">
+					<img src="./images/email.png" class="icon-info" alt="" >
+					<p>novitariche@gmail.com</p>
+				</div>
+			</div>
+		</div>
+		</div>
+
+	</div>
+</section>
+
+<!--temukan kami-->
+<footer class="temukan-kami" id="temukan-kami">
+    <div class="footer-content">
+        <h3>Novita Rizki Wedding Organizer</h3>
+        <p>Jangan lupa kunjungi sosial media kami ya, ditunggu</p>
+        <ul class="sosials">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+			<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+        </ul>
+    </div>
+	<div class="footer-bottom">
+		<p>Copyright &copy;2021 by AKSI </p>
+	</div>
+</footer>
+</body>
+</html>
